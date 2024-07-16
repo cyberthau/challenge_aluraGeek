@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after,
+:root {
+    --purple-light: #df9de7;
+    --purple-medium-light: #c004d9;
+    --purple-medium: #9303a6; 
+    --purple-dark: #8c0375;
+    --background: #5d04d9;
+    --button-active: #03318c;
+    --button-disable: #FFFAFA;
+    --white: #FFFAFA;
+    --black: #111010;
+    --lightgray-color: #919499;
+    --darkgray-color:#404040;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {   
+    background-color: var(--background);
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+    z-index: 1;
+    align-content: center;
+   
+}
+
+.cabecalho {
+    z-index: 2;
+    align-content: center;    
+}
+
+.cabecalho__icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+body{
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:  100px 100px 0px 100px;
+    padding: 40px 0px 0px 0px;
+    gap: 20px;
+}
+
+img {
+    max-width: 100%; 
+    display: block;
+    margin: .2rem auto;
+}
+
+/* Sessões Itens*/
+
+section.items {
+    display: block;
+    box-sizing: content-box;   
+    width: 60vw;    
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    align-content: space-around;
+    justify-content: space-between;
+    gap: 40px;
+    box-shadow: 0 4px 8px 0 var(--lightgray-color), 0 6px 22px 0 var(--lightgray-color);
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.no__items {
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.items{
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: max-content;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px 0px;
+    overflow: auto;
+    gap: 20px;
+    padding: 20px
+}
+
+.items__titulo__div {
+    padding: 20px 10px 20px 10px;
+}
+
+.items__titulo{
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+    align-items: center;
+    padding: 20px;
+}
+
+.geek__items__conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+}
+
+.geek__items {
+    border: 5px solid var(--white);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-wrap:wrap;
+    gap: 10px;
+}
+
+.card {
+    width: 19.4rem;
+    height: 25.6rem;
+    border-radius: 1.0rem;
+    gap: 1.0rem;
+    border: 2px solid var(--background);
+    align-items: center;
+    top: 2.0rem;
+    left: 2.0rem;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 3.0rem;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0 4px 8px 0 var(--lightgray-color), 0 6px 22px 0 var(--lightgray-color);
+    background-color: var(--background);
+
+}
+
+.produtos img{
+    display: block;
+    margin: 0 auto;
+    /* width: 12.6rem;
+    height: 12.4rem; */
+    object-fit: cover;
+    width: 176px;
+    height: 176px;
+    border-radius: 1.0rem;
+    border: 2.0rem;
+    gap: 8.0rem;
+    margin-bottom: 5.0rem;
+    border: 2px solid var(--purple-dark);
+}
+
+
+.card:hover {
+    background-color: var(--purple-medium);
+    border: 2px solid var(--purple-medium-light);
+    color: var(--white);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    font: 16px 600 "Montserrat", sans-serif;
+    text-align: left;
+    color: var(--purple-light);
+    align-content: space-evenly;
+}
+
+.card-container--info {
+ /* display: flex;
+ flex-direction: row;
+ flex-wrap: wrap; */
+ font: 16px 600 "Montserrat", sans-serif;
+ text-align: left;
+ color: var(--purple-light);
+  /* align-content: space-evenly; */
+ padding: 10px;
+}
+
+.card-container--value {
+    padding-top: 10px;
+    text-align: left;
+}
+
+
+.card-container--deleta {
+    flex-direction: row-reverse;
+    justify-items: right;
+    justify-content: right;
+    padding: 0px 0px 0px 120px;
+}
+
+
+.lixeira {
+    width: 25px;
+    height: 25px;
+    justify-self: right;
+}
+
+.lixeira:hover {
+    cursor: pointer;
+    transform: scale(1.15, 1.15);
+}
+
+.lixeira:active {
+    transform: scale(0.95, 0.95);
+}
+
+/* Sessão Formulário */
+
+section.formulario {
+    display: block;
+    box-sizing: content-box;
+    width: 30vw;
+    /* height:100%; */
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    align-content: space-around;
+    justify-content: space-between;
+    gap: 40px;
+    box-shadow: 0 4px 8px 0 var(--lightgray-color), 0 6px 22px 0 var(--lightgray-color);
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.formtitulo__titulo {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+    align-items: center;
+    padding: 20px;
+}
+
+
+.formproduto__text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    font: 400 16px;
+    gap: 20px;
+}
+
+.formproduto__form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    font: 400 18px;
+    gap: 20px;
+}
+
+.formproduto__input {
+    text-align: left;
+    width: 100%;
+    height: 40px;
+    font: 200 16px;
+    color: var(--darkgray-color);
+    text-decoration: none;
+    border: 2px solid var(--purple-medium-light);
+    background-color: var(--white);
+    border-radius: 2rem;
+    padding: 5px;
+
+}
+
+
+.form__botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0;
+    cursor: pointer;
+    gap: 20px;
+}
+
+
+.formproduto__botoes {
+    background-color: var(--button-active);
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 16px;
+    border-color: var(--button-active);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 0;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--white);
+    padding: 2rem;
+    gap: 0.5rem;
+}
+
+.rodape {
+    width: 100%;
+    height: 104px;
+    background: var(--background);
+    margin-top: 1rem;
+    text-align: center;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rodape p {
+    color: #fff;
+    font-weight: 500;
+    line-height: 24px;
+  }

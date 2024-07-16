@@ -1,0 +1,56 @@
+//conexao com a api
+
+async function listaProduto() {
+    const conexao = await fetch("http://localhost:3000/produtos");
+    const conexaoConvertida = await conexao.json();
+
+    return conexaoConvertida;
+
+    // console.log(conexaoConvertida);
+}
+
+// criar novos produtos
+async function criaProduto(nome, preco, url) {
+    const conexao = await fetch("http://localhost:3000/produtos", {
+        method: "POST",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            nome: titulo,
+            preco: preco,
+            url: url,
+            
+        })
+    });
+    if (!conexao.ok) {
+        throw new Error("Não foi possível criar o produto")
+    }
+
+    const conexaoConvertida = conexao.json();
+
+    return conexaoConvertida;
+}
+
+// Deletar produto
+
+async function deletaProduto(){
+    try {
+        const conexao = await fetch(`http://localhost:3000/produtos/${id}` , {
+            method: "DELETE",
+        });
+        const data = await conexao.json();
+        console.log(data);
+    } catch (e) {
+        console.error("Erro ao deletar produto:", error);
+        throw error;
+    }
+}
+
+//Export das funções
+export const conectaApi = {
+    listaProduto,
+    criaProduto,
+    deletaProduto
+
+}

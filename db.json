@@ -1,0 +1,41 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Funko Gandalf",
+            "preco": "299,99",
+            "imagem": "https://m.media-amazon.com/images/I/71fsmENCoQL._AC_SX569_.jpg"
+          },
+      {
+        "id": 2,
+        "nome": "Funko Frodo Baggins",
+        "preco": "299,99",
+        "imagem": "https://m.media-amazon.com/images/I/61Od4zcvIcL.__AC_SX300_SY300_QL70_ML2_.jpg"
+      },
+      {
+        "id": 3,
+        "nome": "Funko Samwise Gamgee",
+        "preco": "299,99",
+        "imagem": "https://m.media-amazon.com/images/I/81Oyar6SDuL._AC_SY879_.jpg"
+      },
+      {
+        "id": 4,
+        "nome": "Funko Gimli",
+        "preco": "299,99",
+        "imagem": "https://m.media-amazon.com/images/I/61dpWP4URSL._AC_SX569_.jpg"
+      },
+      {
+        "id": 5,
+        "nome": "Funko Pippin Took",
+        "preco": "299,99",
+        "imagem": "https://m.media-amazon.com/images/I/61uHvwD7VAL._AC_SX569_.jpg"
+      },
+      {
+        "id": 6,
+        "nome": "Funko Galadriel",
+        "preco": "299,99",
+        "imagem": "https://m.media-amazon.com/images/I/71XM-e-dIQL._AC_SX569_.jpg"
+      }
+    ]
+    
+  }
